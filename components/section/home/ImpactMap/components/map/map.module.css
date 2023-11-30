@@ -1,0 +1,18 @@
+.root {
+  background: var(--mantine-color-dark-9);
+}
+
+.infobox_container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 999;
+  display: flex;
+  width: 300
+}
+
+.infobox {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}

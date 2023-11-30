@@ -1,0 +1,92 @@
+.root {
+  color: var(--mantine-color-gray-1);
+}
+
+.hero {
+  background: #08090f;
+}
+
+.pageheader {
+  font-size: 6rem;
+  line-height: 7rem;
+
+  font-family: August;
+  text-transform: uppercase;
+}
+
+.image_container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+  z-index: --1;
+}
+
+.image_backlines {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.image_backlines i {
+  display: block;
+  height: 100vh;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.image img,
+.image overlay {
+  height: 120vh;
+  margin-top: -20vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+.image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.image_overlay {
+  position: absolute;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  background: radial-gradient(62.47% 65% at 52.08% 32.03%, rgba(0, 0, 0, 0) 28.65%, #0b0b15 100%);
+}
+
+.image_shape_container {
+  margin-top: 20vh;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+  width: 100vw;
+}
+
+.image_shape {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 30rem;
+  border: 80px solid #ef3434;
+}
+
+.image_foreground {
+  z-index: 3;
+}
+.image_background {
+  z-index: 0;
+  filter: blur(1px);
+}

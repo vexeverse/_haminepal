@@ -1,0 +1,108 @@
+.root {
+  height: 100vh;
+  overflow: hidden;
+  background: #08090f;
+}
+
+.image {
+  position: relative;
+  z-index: --1;
+}
+
+.image_backlines {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.image_backlines i {
+  display: block;
+  height: 100vh;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.image img,
+.image overlay {
+  height: 120vh;
+  margin-top: -20vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.image_overlay {
+  position: absolute;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  background: radial-gradient(
+    60.73% 52.25% at 51.42% 41.99%,
+    rgba(0, 0, 0, 0.1) 28.65%,
+    rgba(0, 0, 0, 0.9) 84.9%
+  );
+}
+
+.image_shape_container {
+  margin-top: 20vh;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+  width: 100%;
+}
+
+.image_shape {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 30rem;
+  border: 80px solid #ef3434;
+}
+
+.image_foreground {
+  z-index: 3;
+}
+.image_background {
+  z-index: 0;
+  filter: blur(1px);
+}
+
+.info {
+  color: var(--mantine-color-gray-0);
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.controller {
+  position: absolute;
+  z-index: 10;
+  bottom: 0%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.btnControl {
+  transition: 0.2s ease-in-out;
+  display: block;
+  width: 160px;
+  color: var(--mantine-color-gray-6);
+}
+
+.btnControl:hover {
+  color: var(--mantine-color-gray-1);
+}

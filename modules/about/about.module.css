@@ -1,0 +1,7 @@
+.root {
+}
+
+.tab_inactive {
+  opacity: 0.4;
+  filter: saturate(0);
+}

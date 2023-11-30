@@ -1,0 +1,17 @@
+.root {
+  height: 100vh;
+  position: relative;
+}
+
+.infobox_container {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 999;
+  display: flex;
+  width: 400px;
+}
+
+.infobox {
+}

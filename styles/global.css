@@ -1,0 +1,18 @@
+body {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.heading {
+  font-family: "Bayon", sans-serif;
+  text-transform: uppercase;
+}
+
+.seriff {
+  font-family: "Yeseva One", cursive;
+}
