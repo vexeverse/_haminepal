@@ -159,7 +159,7 @@ export default function LayoutSite({ children }: PropsWithChildren) {
         </AppShell.Header>
 
         <AppShell.Main>
-          {/* <PageTransition /> */}
+          <PageTransition />
           <motion.section
             initial={{
               opacity: 0,

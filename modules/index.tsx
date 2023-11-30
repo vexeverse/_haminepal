@@ -10,11 +10,14 @@ import ModuleTeam from "./team";
 
 import _ModuleHome from "./_final/home";
 
+import ModuleMaintainance from "./maintainance";
+
 export default function Module() {
   return <>Select a module.</>;
 }
 
 Module.Home = _ModuleHome;
+Module.Maintainance = ModuleMaintainance;
 Module.Transparency = ModuleTransparency;
 Module.About = ModuleAbout;
 Module.Campaign = {
