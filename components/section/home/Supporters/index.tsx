@@ -10,7 +10,7 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 
-export default function () {
+export default function Supporters() {
   const theme = useMantineTheme();
 
   return (

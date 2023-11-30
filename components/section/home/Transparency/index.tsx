@@ -4,7 +4,7 @@ import { getAllData } from "@api/transparency";
 import { Container, Grid, Space, Text, useMantineTheme } from "@mantine/core";
 import { useQuery } from "@tanstack/react-query";
 
-export default function () {
+export default function Transparency() {
   const theme = useMantineTheme();
 
   const queryData = useQuery({

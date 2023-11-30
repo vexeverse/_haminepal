@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import classes from "./header.module.css";
 import AnimateCharacter from "./components/AnimateCharacter";
 
-export default function ({
+export default function HeaderText({
   style = {},
   text,
   delay = 0,

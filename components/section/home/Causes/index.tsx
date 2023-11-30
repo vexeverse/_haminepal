@@ -10,7 +10,7 @@ import {
 import { useQuery } from "@tanstack/react-query";
 import CardCause from "@ui/Card/Cause/small";
 
-export default function () {
+export default function Causes() {
   const theme = useMantineTheme();
 
   const queryData = useQuery({

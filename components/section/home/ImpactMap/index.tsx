@@ -18,7 +18,7 @@ const ImpactMap = dynamic(() => import("./components/newmap"), {
   ssr: false,
 });
 
-export default function () {
+export default function IMAP() {
   return (
     <>
       <ImpactMap />

@@ -3,7 +3,7 @@
 //component
 import Pointer from "../Pointer";
 
-export default function ({
+export default function RenderPointer({
   data,
   active,
   setActive,

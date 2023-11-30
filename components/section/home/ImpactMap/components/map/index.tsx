@@ -46,7 +46,7 @@ import { useQuery } from "@tanstack/react-query";
 //api
 import { getAllData } from "@api/campaign/causes";
 
-export default function () {
+export default function Map() {
   // DEFINITIONS
   //theme
   const theme = useMantineTheme();
@@ -90,14 +90,14 @@ export default function () {
   //components
 
   function RenderPointers() {
-    function RenderCircle({ cause, index }: { cause: any; index: number }) {
-      if (index !== activeCause) {
+    function RenderCircle({ cause, key }: { cause: any; key: number }) {
+      if (key !== activeCause) {
         return (
-          <LayerGroup key={index}>
+          <LayerGroup key={key}>
             <CircleMarker
               eventHandlers={{
                 click: () => {
-                  setActiveCause(index);
+                  setActiveCause(key);
                   setActiveCauseData(cause);
                 },
               }}
@@ -113,11 +113,11 @@ export default function () {
         );
       } else {
         return (
-          <LayerGroup key={index}>
+          <LayerGroup key={key}>
             <CircleMarker
               eventHandlers={{
                 click: () => {
-                  setActiveCause(index);
+                  setActiveCause(key);
                   setActiveCauseData(cause);
                 },
               }}
@@ -132,7 +132,7 @@ export default function () {
             <CircleMarker
               eventHandlers={{
                 click: () => {
-                  setActiveCause(index);
+                  setActiveCause(key);
                   setActiveCauseData(cause);
                 },
               }}
@@ -154,7 +154,7 @@ export default function () {
     }
 
     return queryCause.data.map((cause: any, index: number) => (
-      <RenderCircle cause={cause} index={index} />
+      <RenderCircle cause={cause} key={index} />
     ));
   }
 

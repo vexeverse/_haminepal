@@ -33,7 +33,7 @@ import { motion, AnimatePresence } from "framer-motion";
 //components
 import RenderPointers from "./components/RenderPointers";
 
-export default function () {
+export default function NewMap() {
   // * DEFINITIONS
   const theme = useMantineTheme();
 

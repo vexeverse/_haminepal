@@ -6,7 +6,7 @@ import classes from "./into.module.css";
 //assets
 import imgFist from "@/assets/img/powerfist.jpg";
 
-export default function () {
+export default function Intro() {
   const theme = useMantineTheme();
 
   return (

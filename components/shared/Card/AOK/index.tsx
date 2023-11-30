@@ -21,7 +21,7 @@ import { CaretRight, Circle, Users } from "@phosphor-icons/react";
 import { useForm } from "@mantine/form";
 import { useState } from "react";
 
-export default function ({
+export default function CardAOK({
   info,
   key,
   active = false,

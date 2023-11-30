@@ -1,7 +1,7 @@
 import { useMantineTheme } from "@mantine/core";
 import { CircleMarker, LayerGroup, useMap } from "react-leaflet";
 
-export default function ({
+export default function Pointer({
   info,
   active,
   setActive,

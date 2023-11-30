@@ -8,7 +8,7 @@ const WordWrapper = ({ children }: { children: string }) => {
   return <span>{children}</span>;
 };
 
-export default function ({ text }: { text: string }) {
+export default function AChar({ text }: { text: string }) {
   // DEFINITIONS
 
   // CONTAINERS
